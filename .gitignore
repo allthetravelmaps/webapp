@@ -1,2 +1,10 @@
-node_modules
-.firebaserc
+/node_modules
+/functions/node_modules
+
+/coverage
+/build
+
+/.firebaserc
+
+/npm-debug.log*
+/firebase-debug.log
