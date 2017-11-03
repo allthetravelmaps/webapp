@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// TODO: is this importing unneeded things? (ex: messaging module)
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,18 +13,19 @@ class App extends Component {
       databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
       storageBucket: "<BUCKET>.appspot.com",
     };
-    firebase.initializeApp(config);
+    const fbapp = firebase.initializeApp(config, 'travelmapaddict');
 
-    // TODO: add something like a firebase.printConfig() in here
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Welcome to React & Firebase</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h4>Firebase SDK Version: {firebase.SDK_VERSION}</h4>
+        <h4>Firebase Initialized App '{fbapp.name}' with config:</h4>
+        <ul>
+          {Object.keys(fbapp.options).map(key => <ul key={key}>{key}: {fbapp.options[key]}</ul>)}
+        </ul>
       </div>
     );
   }
