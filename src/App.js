@@ -5,13 +5,11 @@ import './App.css';
 
 class App extends Component {
   render() {
-    // TODO: fill these in with env vars
-    // https://webpack.js.org/guides/environment-variables/
     const config = {
-      apiKey: "<API_KEY>",
-      authDomain: "<PROJECT_ID>.firebaseapp.com",
-      databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-      storageBucket: "<BUCKET>.appspot.com",
+      apiKey: process.env.REACT_APP_API_KEY,
+      authDomain: process.env.REACT_APP_PROJECT_ID + ".firebaseapp.com",
+      projectId: process.env.REACT_APP_PROJECT_ID,
+      storageBucket: process.env.REACT_APP_PROJECT_ID + ".appspot.com",
     };
     const fbapp = firebase.initializeApp(config, 'travelmapaddict');
 

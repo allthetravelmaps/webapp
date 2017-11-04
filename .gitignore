@@ -5,6 +5,7 @@
 /build
 
 /.firebaserc
+/.env.*
 
 /npm-debug.log*
 /firebase-debug.log
