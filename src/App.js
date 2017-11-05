@@ -22,7 +22,11 @@ class App extends Component {
         <h4>Firebase SDK Version: {firebase.SDK_VERSION}</h4>
         <h4>Firebase Initialized App '{fbapp.name}' with config:</h4>
         <ul>
-          {Object.keys(fbapp.options).map(key => <ul key={key}>{key}: {fbapp.options[key]}</ul>)}
+          {Object.keys(fbapp.options).map(key => (
+            <ul key={key}>
+              {key}: {fbapp.options[key]}
+            </ul>
+          ))}
         </ul>
       </div>
     )
