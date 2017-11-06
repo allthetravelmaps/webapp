@@ -1,0 +1,16 @@
+$grid-col: 320px;
+$grid-columns: 60;
+$grid-gutter-width: 20px;
+
+/* bootstrap complains if the 0 breakpoint isn't here */
+$grid-breakpoints: (
+  ss: 0,
+  xs: $grid-col,
+  sm: $grid-col * 2,
+  md: $grid-col * 3,
+  lg: $grid-col * 4,
+  xl: $grid-col * 5,
+  ll: $grid-col * 6
+);
+
+@import "bootstrap/scss/bootstrap.scss";

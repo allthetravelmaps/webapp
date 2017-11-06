@@ -22,14 +22,21 @@ class App extends Component {
         </header>
         <h4>Firebase SDK Version: {firebase.SDK_VERSION}</h4>
         <h4>Firebase Initialized App '{fbapp.name}' with config:</h4>
-        <Button>Testing, testing</Button>
-        <ul>
-          {Object.keys(fbapp.options).map(key => (
-            <ul key={key}>
-              {key}: {fbapp.options[key]}
-            </ul>
-          ))}
-        </ul>
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='App-cell col-60 col-sm-30 col-md-20 col-lg-15 col-xl-12 col-ll-10'>
+              <Button>Test, test</Button>
+            </div>
+            {Object.keys(fbapp.options).map(key => (
+              <div
+                key={key}
+                className='App-cell col-60 col-sm-30 col-md-20 col-lg-15 col-xl-12 col-ll-10'
+              >
+                {key}: {fbapp.options[key]}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     )
   }
