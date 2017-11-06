@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "license": "ISC",
+  "standard": {
+    "parser": "babel-eslint",
+    "plugins": ["flowtype"]
+  },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "firebase": "^4.6.1",
@@ -23,6 +27,7 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
+    "flow": "flow",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

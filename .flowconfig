@@ -1,0 +1,13 @@
+[ignore]
+.*/protobufjs/src/bower.json
+.*/protobufjs/tests/data/invalid.json
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
