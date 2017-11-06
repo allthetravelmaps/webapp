@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import firebase from 'firebase'
 import logo from './logo.svg'
 import './App.css'
+import { Button } from 'reactstrap'
 
 class App extends Component {
   render () {
@@ -21,6 +22,7 @@ class App extends Component {
         </header>
         <h4>Firebase SDK Version: {firebase.SDK_VERSION}</h4>
         <h4>Firebase Initialized App '{fbapp.name}' with config:</h4>
+        <Button>Testing, testing</Button>
         <ul>
           {Object.keys(fbapp.options).map(key => (
             <ul key={key}>

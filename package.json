@@ -4,10 +4,13 @@
   "private": true,
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "firebase": "^4.6.1",
+    "jquery": "^3.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "reactstrap": "^5.0.0-alpha.3"
   },
   "scripts": {
     "start": "react-scripts start",
