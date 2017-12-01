@@ -19,7 +19,10 @@ class App extends Component<{}> {
       projectId: `process.env.REACT_APP_PROJECT_ID`,
       storageBucket: `{process.env.REACT_APP_PROJECT_ID}.appspot.com`
     }
-    const fbapp = firebase.initializeApp(config, 'travelmapaddict')
+    const fbapp = firebase.initializeApp(
+      config,
+      `process.env.REACT_APP_PROJECT_ID`
+    )
 
     return (
       <div className='App'>

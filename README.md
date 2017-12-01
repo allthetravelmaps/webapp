@@ -1,4 +1,4 @@
-# TravelMapAddict
+# All the Travel Maps
 
 This is a work in progress.
 
