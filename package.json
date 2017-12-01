@@ -5,24 +5,24 @@
   "license": "ISC",
   "standard": {
     "parser": "babel-eslint",
-    "plugins": ["flowtype"]
+    "plugins": [
+      "flowtype"
+    ]
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
-    "firebase": "^4.6.1",
+    "firebase": "^4.7.0",
     "jquery": "^3.2.1",
-    "node-sass": "^4.6.0",
+    "node-sass": "^4.7.2",
     "npm-run-all": "^4.1.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
-    "reactstrap": "^5.0.0-alpha.3"
+    "reactstrap": "^5.0.0-alpha.4"
   },
   "scripts": {
-    "build-css":
-      "node-sass --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css":
-      "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "build-css": "node-sass --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
