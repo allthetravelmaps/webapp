@@ -14,14 +14,14 @@ class App extends Component<{}> {
       throw new Error('REACT_APP_PROJECT_ID undefined')
     }
     const config = {
-      apiKey: `process.env.REACT_APP_API_KEY`,
-      authDomain: `{process.env.REACT_APP_PROJECT_ID}.firebaseapp.com`,
-      projectId: `process.env.REACT_APP_PROJECT_ID`,
-      storageBucket: `{process.env.REACT_APP_PROJECT_ID}.appspot.com`
+      apiKey: `${process.env.REACT_APP_API_KEY}`,
+      authDomain: `${process.env.REACT_APP_PROJECT_ID}.firebaseapp.com`,
+      projectId: `${process.env.REACT_APP_PROJECT_ID}`,
+      storageBucket: `${process.env.REACT_APP_PROJECT_ID}.appspot.com`
     }
     const fbapp = firebase.initializeApp(
       config,
-      `process.env.REACT_APP_PROJECT_ID`
+      `${process.env.REACT_APP_PROJECT_ID}`
     )
 
     return (
