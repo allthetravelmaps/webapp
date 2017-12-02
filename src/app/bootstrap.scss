@@ -14,3 +14,8 @@ $grid-breakpoints: (
 );
 
 @import "bootstrap/scss/bootstrap.scss";
+
+/* used in grid display of items (maps, travelers, etc) */
+.bootstrap-col {
+  @extend .col-60, .col-sm-30, .col-md-20, .col-lg-15, .col-xl-12, .col-sl-10;
+}
