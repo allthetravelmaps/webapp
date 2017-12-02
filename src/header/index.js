@@ -4,9 +4,9 @@ import './index.css'
 import logo from './logo.svg'
 
 const Header = (props: {}) => (
-  <header className='App-header'>
-    <img src={logo} className='App-logo' alt='logo' />
-    <h1 className='App-title'>Welcome to React & Firebase</h1>
+  <header className='header'>
+    <img src={logo} className='logo' alt='logo' />
+    <h1 className='title'>Welcome to React & Firebase</h1>
   </header>
 )
 

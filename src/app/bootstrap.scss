@@ -10,7 +10,7 @@ $grid-breakpoints: (
   md: $grid-col * 3,
   lg: $grid-col * 4,
   xl: $grid-col * 5,
-  ll: $grid-col * 6
+  sl: $grid-col * 6
 );
 
 @import "bootstrap/scss/bootstrap.scss";

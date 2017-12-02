@@ -13,14 +13,11 @@ const Main = (props: { fbapp: any, sdkVersion: string }) => (
     </h4>
     <div className='container-fluid'>
       <div className='row'>
-        <div className='App-cell col-60 col-sm-30 col-md-20 col-lg-15 col-xl-12 col-ll-10'>
+        <div className='cell'>
           <Button>Test, test</Button>
         </div>
         {Object.keys(props.fbapp.options).map(key => (
-          <div
-            key={key}
-            className='App-cell col-60 col-sm-30 col-md-20 col-lg-15 col-xl-12 col-ll-10'
-          >
+          <div key={key} className='cell'>
             {key}: {props.fbapp.options[key]}
           </div>
         ))}
