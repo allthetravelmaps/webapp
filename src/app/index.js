@@ -9,7 +9,7 @@ import {
   TravelerProfile,
   NoMatch
 } from '../main'
-import './bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
 const App = () => {
