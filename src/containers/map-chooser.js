@@ -1,8 +1,8 @@
 // @flow
 import React from 'react'
-import SearchBar from '../components/searchBar.js'
-import TileGrid from '../components/tileGrid.js'
-import MapTile from '../components/mapTile.js'
+import SearchBar from '../components/search-bar.js'
+import TileGrid from '../components/tile-grid.js'
+import MapTile from '../components/map-tile.js'
 
 const MapChooser = () => (
   <div>

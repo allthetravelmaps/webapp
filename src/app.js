@@ -2,11 +2,11 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
 import Header from './components/header.js'
-import NoMatch from './components/noMatch.js'
-import MapChooser from './containers/mapChooser.js'
-import MapExplorer from './containers/mapExplorer.js'
-import TravelerDirectory from './containers/travelerDirectory.js'
-import TravelerProfile from './containers/travelerProfile.js'
+import NoMatch from './components/no-match.js'
+import MapChooser from './containers/map-chooser.js'
+import MapExplorer from './containers/map-explorer.js'
+import TravelerDirectory from './containers/traveler-directory.js'
+import TravelerProfile from './containers/traveler-profile.js'
 
 const App = () => {
   return (
