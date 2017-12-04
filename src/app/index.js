@@ -1,14 +1,12 @@
 // @flow
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
-import Header from '../header'
-import {
-  MapChooser,
-  MapExplorer,
-  TravelerDirectory,
-  TravelerProfile,
-  NoMatch
-} from '../main'
+import Header from '../components/header'
+import NoMatch from '../components/noMatch'
+import MapChooser from '../containers/mapChooser'
+import MapExplorer from '../containers/mapExplorer'
+import TravelerDirectory from '../containers/travelerDirectory'
+import TravelerProfile from '../containers/travelerProfile'
 import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
