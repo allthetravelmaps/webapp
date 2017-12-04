@@ -2,7 +2,7 @@
 import React from 'react'
 
 const TravelerProfile = (props: { match: any }) => (
-  <div className='main-traveler-profile'>
+  <div>
     Traveler Profile: {props.match.params.username}
   </div>
 )

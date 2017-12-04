@@ -1,22 +1,20 @@
 // @flow
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
-import Header from '../components/header'
-import NoMatch from '../components/noMatch'
-import MapChooser from '../containers/mapChooser'
-import MapExplorer from '../containers/mapExplorer'
-import TravelerDirectory from '../containers/travelerDirectory'
-import TravelerProfile from '../containers/travelerProfile'
-import 'bootstrap/dist/css/bootstrap.css'
-import './index.css'
+import Header from './components/header.js'
+import NoMatch from './components/noMatch.js'
+import MapChooser from './containers/mapChooser.js'
+import MapExplorer from './containers/mapExplorer.js'
+import TravelerDirectory from './containers/travelerDirectory.js'
+import TravelerProfile from './containers/travelerProfile.js'
 
 const App = () => {
   return (
-    <div className='app'>
-      <div className='app-header'>
+    <div style={{ display: 'flex', flexFlow: 'column', minHeight: '100vh' }}>
+      <div style={{ flex: '0 1 auto' }}>
         <Header />
       </div>
-      <div className='app-main'>
+      <div style={{ flex: '1 1 auto', position: 'relative' }}>
         <Switch>
           <Redirect exact from='/' to='/maps/countries-of-the-world' />
           <Route exact path='/maps' component={MapChooser} />

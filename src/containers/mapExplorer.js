@@ -2,7 +2,6 @@
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
-import './index.css'
 
 /* inspiration from https://github.com/alex3165/react-mapbox-gl/blob/master/src/map.tsx */
 
@@ -23,7 +22,7 @@ class MapExplorer extends React.Component<{ match: any }, {}> {
   render () {
     return (
       <div
-        className='main-map-explorer'
+        style={{ position: 'absolute', height: '100%', width: '100%' }}
         ref={x => {
           this.container = x
         }}

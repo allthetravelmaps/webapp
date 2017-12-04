@@ -2,7 +2,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import App from './app'
+import App from './app.js'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const rootElem = document.getElementById('root')
 if (!rootElem) throw new Error('Root element not found')

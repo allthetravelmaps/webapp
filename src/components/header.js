@@ -1,32 +1,41 @@
 // @flow
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './index.css'
 
 const Menu = () => (
-  <div className='header-menu'>
+  <div>
     <Link to='/'>ATTM / Maps</Link>
   </div>
 )
 
-const Title = () => (
-  <div className='header-title'>
-    You have explored 0% of Countries of the World
-  </div>
-)
+const Title = () => <div>You have explored 0% of Countries of the World</div>
 
 const ChangeMapButton = () => (
   <Link to='/maps'>
-    <div className='header-change-map-button'>Change Map</div>
+    <div
+      style={{
+        display: 'inline-block',
+        marginRight: 10
+      }}
+    >
+      Change Map
+    </div>
   </Link>
 )
 
 const AuthControl = () => (
-  <div className='header-auth-control'>Log in or Sign up</div>
+  <div style={{ display: 'inline-block' }}>Log in or Sign up</div>
 )
 
 const Header = (props: {}) => (
-  <header className='header'>
+  <header
+    style={{
+      width: '100%',
+      display: 'flex',
+      justifyContent: 'space-between',
+      borderBottom: '2px solid black'
+    }}
+  >
     <div>
       <Menu />
     </div>
