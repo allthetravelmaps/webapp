@@ -1,12 +1,7 @@
-.main-map-chooser {
+.tile-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   grid-gap: 20px;
   justify-content: space-evenly;
   margin: 10px;
-}
-
-.main-map-tile {
-  border: 5px solid black;
-  height: 300px;
 }
