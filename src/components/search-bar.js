@@ -9,7 +9,7 @@ import {
   Label
 } from 'reactstrap'
 
-const SearchBar = (props: { itemType: string }) => (
+const SearchBar = (props: { itemType: string, sortOpts: string[] }) => (
   <Form
     inline
     style={{
@@ -30,10 +30,10 @@ const SearchBar = (props: { itemType: string }) => (
         Showing 92 {props.itemType}s
       </Label>
       <Input type='select'>
-        <option>most popular first</option>
-        <option>least popular first</option>
-        <option>newest first</option>
-        <option>oldest first</option>
+        <option>{props.sortOpts[0]}</option>
+        <option>{props.sortOpts[1]}</option>
+        <option>{props.sortOpts[2]}</option>
+        <option>{props.sortOpts[3]}</option>
       </Input>
     </FormGroup>
   </Form>

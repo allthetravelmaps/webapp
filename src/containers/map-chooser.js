@@ -6,7 +6,15 @@ import MapTile from '../components/map-tile.js'
 
 const MapChooser = () => (
   <div>
-    <SearchBar itemType='map' />
+    <SearchBar
+      itemType='map'
+      sortOpts={[
+        'most popular first',
+        'least popular first',
+        'newest first',
+        'oldest first'
+      ]}
+    />
     <TileGrid>
       <MapTile />
       <MapTile />
