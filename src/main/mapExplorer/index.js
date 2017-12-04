@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import mapboxgl from 'mapbox-gl'
-import '../../../node_modules/mapbox-gl/dist/mapbox-gl.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
 import './index.css'
 
 /* inspiration from https://github.com/alex3165/react-mapbox-gl/blob/master/src/map.tsx */
