@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import * as React from 'react'
 
 const NoMatch = (props: { location: * }) => (
   <div>No Match for: {props.location.pathname}</div>

@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import React from 'react'
+import * as React from 'react'
 import ReactDOM from 'react-dom'
 import App from './index.js'
 

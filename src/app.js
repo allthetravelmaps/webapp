@@ -1,5 +1,5 @@
 // @flow
-import React from 'react'
+import * as React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
 import Header from './components/header.js'
 import NoMatch from './components/no-match.js'
