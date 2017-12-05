@@ -5,7 +5,7 @@ import 'mapbox-gl/dist/mapbox-gl.css'
 
 /* inspiration from https://github.com/alex3165/react-mapbox-gl/blob/master/src/map.tsx */
 
-class MapExplorer extends React.Component<{ match: any }, {}> {
+class MapExplorer extends React.Component<{ match: * }, {}> {
   container: ?HTMLDivElement
 
   componentDidMount () {
