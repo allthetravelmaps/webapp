@@ -16,7 +16,15 @@ const App = () => {
       <div style={{ flex: '0 1 auto' }}>
         <Header />
       </div>
-      <div style={{ flex: '1 1 auto', position: 'relative' }}>
+      <div
+        style={{
+          flex: '1 1 auto',
+          position: 'relative',
+          display: 'flex',
+          justifyContent: 'center',
+          overflow: 'hidden'
+        }}
+      >
         <Switch>
           <Redirect exact from='/' to='/maps/countries-of-the-world' />
           <Route exact path='/maps' component={MapSearchInterface} />

@@ -1,26 +1,24 @@
 // @flow
 import * as React from 'react'
 import SearchBar from '../components/search-bar.js'
-import TileGrid from '../components/tile-grid.js'
+import SearchResults from '../components/search-results.js'
 import MapTile from '../components/map-tile.js'
 import TravelerTile from '../components/traveler-tile.js'
+import './search-interface.css'
 
 type SearchInterfaceProps = {
   itemType: string,
   sortOpts: string[],
-  TileComponent: React.ComponentType<*>
+  tileComponent: React.ComponentType<*>
 }
 
 const SearchInterface = (props: SearchInterfaceProps) => (
-  <div>
+  <div
+    id='search-interface'
+    style={{ padding: '10px 60px 0', flex: '1 1 auto' }}
+  >
     <SearchBar itemType={props.itemType} sortOpts={props.sortOpts} />
-    <TileGrid>
-      <props.TileComponent />
-      <props.TileComponent />
-      <props.TileComponent />
-      <props.TileComponent />
-      <props.TileComponent />
-    </TileGrid>
+    <SearchResults tileComponent={props.tileComponent} />
   </div>
 )
 
@@ -33,7 +31,7 @@ const MapSearchInterface = () => (
       'newest first',
       'oldest first'
     ]}
-    TileComponent={MapTile}
+    tileComponent={MapTile}
   />
 )
 
@@ -46,7 +44,7 @@ const TravelerSearchInterface = () => (
       'newest first',
       'oldest first'
     ]}
-    TileComponent={TravelerTile}
+    tileComponent={TravelerTile}
   />
 )
 

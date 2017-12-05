@@ -7,7 +7,8 @@ const MapTile = () => (
       border: '1px solid black',
       padding: 50,
       height: 300,
-      textAlign: 'center'
+      textAlign: 'center',
+      minWidth: 300
     }}
   >
     Map Tile
