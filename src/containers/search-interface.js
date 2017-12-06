@@ -4,7 +4,6 @@ import SearchBar from '../components/search-bar.js'
 import SearchResults from '../components/search-results.js'
 import MapTile from '../components/map-tile.js'
 import TravelerTile from '../components/traveler-tile.js'
-import './search-interface.css'
 
 type SearchInterfaceProps = {
   itemType: string,
@@ -13,10 +12,7 @@ type SearchInterfaceProps = {
 }
 
 const SearchInterface = (props: SearchInterfaceProps) => (
-  <div
-    id='search-interface'
-    style={{ padding: '10px 60px 0', flex: '1 1 auto' }}
-  >
+  <div>
     <SearchBar itemType={props.itemType} sortOpts={props.sortOpts} />
     <SearchResults tileComponent={props.tileComponent} />
   </div>
