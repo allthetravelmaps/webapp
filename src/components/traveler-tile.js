@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react'
 
-const TravelerTile = () => (
+const TravelerTile = (props: { slug: string }) => (
   <div
     style={{
       border: '1px solid black',
@@ -10,7 +10,9 @@ const TravelerTile = () => (
       textAlign: 'center'
     }}
   >
-    Traveler Tile
+    Traveler Tile<br />
+    <br />
+    {props.slug}
   </div>
 )
 

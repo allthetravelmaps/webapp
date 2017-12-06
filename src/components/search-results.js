@@ -1,7 +1,10 @@
 // @flow
 import * as React from 'react'
 
-const SearchResults = (props: { tileComponent: React.ComponentType<*> }) => (
+const SearchResults = (props: {
+  tileComponent: React.ComponentType<*>,
+  resultSlugs: string[]
+}) => (
   <div
     style={{
       display: 'grid',
@@ -10,11 +13,9 @@ const SearchResults = (props: { tileComponent: React.ComponentType<*> }) => (
       justifyContent: 'space-evenly'
     }}
   >
-    <props.tileComponent />
-    <props.tileComponent />
-    <props.tileComponent />
-    <props.tileComponent />
-    <props.tileComponent />
+    {props.resultSlugs.map(slug => (
+      <props.tileComponent slug={slug} key={slug} />
+    ))}
   </div>
 )
 

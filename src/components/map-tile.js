@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react'
 
-const MapTile = () => (
+const MapTile = (props: { slug: string }) => (
   <div
     style={{
       border: '1px solid black',
@@ -11,7 +11,9 @@ const MapTile = () => (
       minWidth: 300
     }}
   >
-    Map Tile
+    Map Tile<br />
+    <br />
+    {props.slug}
   </div>
 )
 
