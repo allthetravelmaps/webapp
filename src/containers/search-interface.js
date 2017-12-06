@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react'
-import SearchBar from '../components/search-bar.js'
+import SearchBar from './search-bar'
 import SearchResults from '../components/search-results.js'
 import MapTile from '../components/map-tile.js'
 import TravelerTile from '../components/traveler-tile.js'

@@ -8,16 +8,11 @@ import {
   InputGroupButton,
   Label
 } from 'reactstrap'
+import './index.css'
 
 const SearchBar = (props: { itemType: string, sortOpts: string[] }) => (
-  <Form
-    inline
-    style={{
-      justifyContent: 'space-between',
-      margin: '25px 10px 20px'
-    }}
-  >
-    <FormGroup style={{ marginRight: 10, flexGrow: 1 }}>
+  <Form inline id='search-bar'>
+    <FormGroup id='search-bar-left'>
       <InputGroup style={{ flexGrow: 1 }}>
         <Input placeholder={`Search ${props.itemType}s...`} />
         <InputGroupButton style={{ fontVariant: 'small-caps' }}>
@@ -25,10 +20,8 @@ const SearchBar = (props: { itemType: string, sortOpts: string[] }) => (
         </InputGroupButton>
       </InputGroup>
     </FormGroup>
-    <FormGroup>
-      <Label style={{ paddingRight: '1ch' }}>
-        Showing 92 {props.itemType}s
-      </Label>
+    <FormGroup id='search-bar-right'>
+      <Label style={{ marginRight: '1ch' }}>92 {props.itemType}s</Label>
       <Input type='select'>
         <option>{props.sortOpts[0]}</option>
         <option>{props.sortOpts[1]}</option>
