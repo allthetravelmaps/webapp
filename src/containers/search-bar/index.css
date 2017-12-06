@@ -28,7 +28,6 @@
 #search-bar-right {
   grid-column: -2 / -1;
   width: 100%;
-  margin-top: 10px;
   justify-content: space-between;
 }
 

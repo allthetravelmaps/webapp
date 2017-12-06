@@ -9,3 +9,5 @@
 
 /npm-debug.log*
 /firebase-debug.log
+
+/src/bootstrap/bootstrap.css

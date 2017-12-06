@@ -1,0 +1,18 @@
+/* Bootstrap forms completely change layout when the viewport is in the 'xs'
+ * size, compared to all the other sizes.
+ *
+ * To avoid this, let's make the 'xs' size smaller than our body min-width.
+ *
+ * Note that setting 'enable-grid-classes' to false doesn't seem to affect
+ * the forms.
+ */
+
+$grid-breakpoints: (
+  ss: 0,
+  xs: 1px,
+  md: 2px,
+  lg: 3px,
+  xl: 4px
+);
+
+@import "bootstrap/scss/bootstrap.scss";
