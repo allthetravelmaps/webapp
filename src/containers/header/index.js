@@ -1,15 +1,8 @@
 // @flow
 import * as React from 'react'
 import { Button, Input, InputGroup, InputGroupButton } from 'reactstrap'
+import Menu from './menu.js'
 import './index.css'
-
-const Menu = () => (
-  <div id='header-menu'>
-    <div className='bg-light header-button-wrapper'>
-      <Button outline>&#x2630;</Button>
-    </div>
-  </div>
-)
 
 const Search = () => (
   <div id='header-search'>

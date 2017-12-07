@@ -3,7 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: strech;
-  border-bottom: 2px solid black;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 0 1px 2px black;
 }
 
 #header button:not(.header-button-keep-border) {
@@ -74,4 +76,18 @@
   #header-auth-control-signup-button-wrapper {
     display: inline-block;
   }
+}
+
+#header-menu {
+  position: relative;
+}
+
+.header-dropdown-box {
+  position: absolute;
+  width: 300px;
+  opacity: 0.9;
+  background-color: white;
+  border: 1px solid black;
+  border-left: none;
+  margin-top: 1px;
 }
