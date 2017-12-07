@@ -29,7 +29,7 @@ const App = () => (
     <div style={{ flex: '0 0 auto' }}>
       <Header />
     </div>
-    <div style={{ flex: '1 1 auto' }}>
+    <div style={{ flex: '1 1 auto', position: 'relative' }}>
       <Switch>
         <Redirect exact from='/' to='/maps/countries-of-the-world' />
         <Route path='/maps/:mapSlug' component={MapExplorer} />

@@ -13,14 +13,11 @@
   position: relative;
 }
 
-#header .header-button-wrapper {
+.header-button-wrapper {
   border-width: 0 1px 0;
   border-color: black;
   border-style: solid;
   margin: 0 -1px 0;
-}
-
-#header-menu .header-button-wrapper {
   height: 100%;
   display: flex;
 }
@@ -54,17 +51,12 @@
   display: inline-block;
 }
 
-#header-title .header-title-emphasis {
+.header-title-emphasis {
   font-size: 14pt;
   font-weight: bold;
 }
 
 #header-auth-control {
-  height: 100%;
-  display: flex;
-}
-
-#header-auth-control-profile-button-wrapper {
   height: 100%;
   display: flex;
 }
