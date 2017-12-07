@@ -6,22 +6,23 @@
   border-bottom: 2px solid black;
 }
 
-#header button {
+#header button:not(.header-button-keep-border) {
+  border: none;
   border-radius: 0;
-  border-color: black;
+  /* avoid 'overshadowing' of :focus box-shadows by adjacent elements */
+  position: relative;
 }
 
-#header-menu {
+#header .header-button-wrapper {
+  border-width: 0 1px 0;
+  border-color: black;
+  border-style: solid;
+  margin: 0 -1px 0;
+}
+
+#header-menu .header-button-wrapper {
   height: 100%;
   display: flex;
-  align-items: center;
-  border: 1px solid black;
-  border-width: 0 1px 0 0;
-}
-
-#header-menu button {
-  border: none;
-  height: 100%;
 }
 
 #header-search {
@@ -40,25 +41,17 @@
   align-items: center;
 }
 
-#header-search input {
-  border-color: black;
-}
-
 #header-search button {
-  border-radius: 0 4px 4px 0;
+  border-color: #ced4da;
 }
 
 #header-title {
   font-size: 10pt;
   text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
-@media screen and (min-width: 640px) {
-  #header-title {
-    flex-direction: row;
-  }
+#header-title span {
+  display: inline-block;
 }
 
 #header-title .header-title-emphasis {
@@ -67,22 +60,26 @@
 }
 
 #header-auth-control {
-  margin-top: -1px;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-@media screen and (min-width: 640px) {
-  #header-auth-control {
-    flex-direction: row;
+#header-auth-control-profile-button-wrapper {
+  height: 100%;
+  display: flex;
+}
+
+#header-auth-control-login-button-wrapper,
+#header-auth-control-signup-button-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  #header-auth-control-profile-button-wrapper {
+    display: none;
   }
-}
-
-#header-auth-control button {
-  margin-bottom: -1px;
-  border-width: 1px 0 1px 1px;
-  padding: 6px;
-  width: 70px;
+  #header-auth-control-login-button-wrapper,
+  #header-auth-control-signup-button-wrapper {
+    display: inline-block;
+  }
 }

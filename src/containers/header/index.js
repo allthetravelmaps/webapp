@@ -4,8 +4,10 @@ import { Button, Input, InputGroup, InputGroupButton } from 'reactstrap'
 import './index.css'
 
 const Menu = () => (
-  <div id='header-menu' className='bg-light'>
-    <Button outline>&#x2630;</Button>
+  <div id='header-menu'>
+    <div className='bg-light header-button-wrapper'>
+      <Button outline>&#x2630;</Button>
+    </div>
   </div>
 )
 
@@ -13,31 +15,42 @@ const Search = () => (
   <div id='header-search'>
     <InputGroup size='sm'>
       <Input placeholder='Search 117 maps...' />
-      <InputGroupButton outline>&#128269;</InputGroupButton>
+      <InputGroupButton outline className='header-button-keep-border'>
+        &#128269;
+      </InputGroupButton>
     </InputGroup>
   </div>
 )
 
 const Title = () => (
   <div id='header-title'>
-    <div className='header-title-linebreak'>
-      <span className='header-title-emphasis'>You</span>
-      <span> have explored </span>
-      <span className='header-title-emphasis'>23.4%</span>
-      <span> of&nbsp;</span>
-    </div>
-    <div className='header-title-linebreak'>
-      <span className='header-title-emphasis'>Countries of the World</span>
-    </div>
+    <span className='header-title-emphasis'>You</span>
+    <span>&nbsp;have explored&nbsp;</span>
+    <span className='header-title-emphasis'>23.4%</span>
+    <span>&nbsp;of&nbsp;</span>
+    {/* The map title element needs to fit within 320px */}
+    <span className='header-title-emphasis'>Neighborhoods of Buenos Aires</span>
   </div>
 )
 
 const AuthControl = () => (
   <div id='header-auth-control'>
-    <div className='bg-light'>
+    <div
+      id='header-auth-control-profile-button-wrapper'
+      className='bg-light header-button-wrapper'
+    >
+      <Button outline>&#128100;</Button>
+    </div>
+    <div
+      id='header-auth-control-login-button-wrapper'
+      className='bg-light header-button-wrapper'
+    >
       <Button outline>Log in</Button>
     </div>
-    <div className='bg-light'>
+    <div
+      id='header-auth-control-signup-button-wrapper'
+      className='bg-light header-button-wrapper'
+    >
       <Button outline>Sign up</Button>
     </div>
   </div>
