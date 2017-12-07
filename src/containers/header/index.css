@@ -1,0 +1,88 @@
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: strech;
+  border-bottom: 2px solid black;
+}
+
+#header button {
+  border-radius: 0;
+  border-color: black;
+}
+
+#header-menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-width: 0 1px 0 0;
+}
+
+#header-menu button {
+  border: none;
+  height: 100%;
+}
+
+#header-search {
+  margin-left: 10px;
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  #header-search {
+    display: block;
+  }
+}
+
+#header-search .input-group {
+  height: 100%;
+  align-items: center;
+}
+
+#header-search input {
+  border-color: black;
+}
+
+#header-search button {
+  border-radius: 0 4px 4px 0;
+}
+
+#header-title {
+  font-size: 10pt;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 640px) {
+  #header-title {
+    flex-direction: row;
+  }
+}
+
+#header-title .header-title-emphasis {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+#header-auth-control {
+  margin-top: -1px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 640px) {
+  #header-auth-control {
+    flex-direction: row;
+  }
+}
+
+#header-auth-control button {
+  margin-bottom: -1px;
+  border-width: 1px 0 1px 1px;
+  padding: 6px;
+  width: 70px;
+}

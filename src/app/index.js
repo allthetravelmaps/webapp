@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
-import Header from '../components/header.js'
+import Header from '../containers/header'
 import NoMatch from '../components/no-match.js'
 import MapExplorer from '../containers/map-explorer.js'
 import {
