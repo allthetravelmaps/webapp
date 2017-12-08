@@ -60,7 +60,7 @@
 
 #header-auth-control {
   height: 100%;
-  display: flex;
+  position: relative;
 }
 
 #header-auth-control-login-button-wrapper,
@@ -85,9 +85,17 @@
 .header-dropdown-box {
   position: absolute;
   width: 300px;
-  opacity: 0.9;
   background-color: white;
   border: 1px solid black;
-  border-left: none;
   margin-top: 1px;
+}
+
+#header-menu .header-dropdown-box {
+  left: 0;
+  border-left: none;
+}
+
+#header-auth-control .header-dropdown-box {
+  right: 0;
+  border-right: none;
 }

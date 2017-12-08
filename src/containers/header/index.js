@@ -2,6 +2,7 @@
 import * as React from 'react'
 import { Button, Input, InputGroup, InputGroupButton } from 'reactstrap'
 import Menu from './menu.js'
+import AuthControl from './auth-control.js'
 import './index.css'
 
 const Search = () => (
@@ -27,33 +28,6 @@ const Title = () => (
     <span>&nbsp;of&nbsp;</span>
     {/* The map title element needs to fit within 320px */}
     <span className='header-title-emphasis'>Neighborhoods of Buenos Aires</span>
-  </div>
-)
-
-const AuthControl = () => (
-  <div id='header-auth-control'>
-    <div
-      id='header-auth-control-profile-button-wrapper'
-      className='bg-light header-button-wrapper'
-    >
-      <Button outline>
-        <span role='img' aria-label='log in or sign up'>
-          &#x1F464;
-        </span>
-      </Button>
-    </div>
-    <div
-      id='header-auth-control-login-button-wrapper'
-      className='bg-light header-button-wrapper'
-    >
-      <Button outline>Log in</Button>
-    </div>
-    <div
-      id='header-auth-control-signup-button-wrapper'
-      className='bg-light header-button-wrapper'
-    >
-      <Button outline>Sign up</Button>
-    </div>
   </div>
 )
 
