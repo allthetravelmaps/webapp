@@ -8,8 +8,12 @@ const Search = () => (
   <div id='header-search'>
     <InputGroup size='sm'>
       <Input placeholder='Search 117 maps...' />
-      <InputGroupButton outline className='header-button-keep-border'>
-        &#128269;
+      <InputGroupButton>
+        <Button outline className='header-button-keep-border'>
+          <span role='img' aria-label='search'>
+            &#x1F50D;
+          </span>
+        </Button>
       </InputGroupButton>
     </InputGroup>
   </div>
@@ -32,7 +36,11 @@ const AuthControl = () => (
       id='header-auth-control-profile-button-wrapper'
       className='bg-light header-button-wrapper'
     >
-      <Button outline>&#128100;</Button>
+      <Button outline>
+        <span role='img' aria-label='log in or sign up'>
+          &#x1F464;
+        </span>
+      </Button>
     </div>
     <div
       id='header-auth-control-login-button-wrapper'
