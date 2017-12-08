@@ -1,21 +1,24 @@
 // @flow
 import firebase from 'firebase'
 
-function getFirebaseCredentials () {
+function getFirebaseCredentials (): [string, string] {
   if (!process.env.REACT_APP_PROJECT_ID) {
-    throw new Error('REACT_APP_PROJECT_ID undefined')
+    throw new Error('REACT_APP_FB_PROJECT_ID undefined')
   }
   if (!process.env.REACT_APP_API_KEY) {
-    throw new Error('REACT_APP_API_KEY undefined')
+    throw new Error('REACT_APP_FB_API_KEY undefined')
   }
-  return [process.env.REACT_APP_PROJECT_ID, process.env.REACT_APP_API_KEY]
+  return [
+    String(process.env.REACT_APP_FB_PROJECT_ID),
+    String(process.env.REACT_APP_FB_API_KEY)
+  ]
 }
 
 function getExistingFbApp (projectId) {
   return firebase.apps.find(app => app.name === projectId)
 }
 
-function initNewFbApp (projectId, apiKey) {
+function initNewFbApp (projectId: string, apiKey: string) {
   const config = {
     apiKey: apiKey,
     authDomain: `${projectId}.firebaseapp.com`,
