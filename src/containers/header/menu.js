@@ -44,23 +44,21 @@ class Menu extends React.Component<*, { isOpen: boolean }> {
     this.setState({ isOpen: false })
   }
 
-  render () {
-    return (
-      <div id='header-menu'>
-        <div className='bg-light header-button-wrapper'>
-          <Button outline onClick={this.handleClick}>
-            &#x2630;
-          </Button>
-        </div>
-        <div
-          className='header-dropdown-box'
-          style={{ display: this.state.isOpen ? 'block' : 'none' }}
-        >
-          <MenuItems />
-        </div>
+  render = () => (
+    <div id='header-menu'>
+      <div className='bg-light header-button-wrapper'>
+        <Button outline onClick={this.handleClick}>
+          &#x2630;
+        </Button>
       </div>
-    )
-  }
+      <div
+        className='header-dropdown-box'
+        style={{ display: this.state.isOpen ? 'block' : 'none' }}
+      >
+        <MenuItems />
+      </div>
+    </div>
+  )
 }
 
 export default onClickOutside(Menu)
