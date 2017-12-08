@@ -1,15 +1,29 @@
 // @flow
 import * as React from 'react'
-import { withRouter } from 'react-router'
+import { matchPath, withRouter } from 'react-router'
 import { Button, Form, Input, InputGroup, InputGroupButton } from 'reactstrap'
 
-class Search extends React.Component<*> {
+type PropsType = {
+  history: { push: string => mixed },
+  location: { pathname: string }
+}
+
+class Search extends React.Component<PropsType> {
   input: ?HTMLInputElement
 
   handleSubmit = (evt: SyntheticEvent<HTMLElement>) => {
     evt.preventDefault()
-    const query = this.input && this.input.value ? `?s=${this.input.value}` : ''
+    const query = this.input && this.input.value ? `?q=${this.input.value}` : ''
     this.props.history.push(`/maps${query}`)
+  }
+
+  componentDidUpdate = () => {
+    /* if we're not on the search results page, clear the search query */
+    const isOnMapsSearch = matchPath(this.props.location.pathname, {
+      path: '/maps',
+      exact: true
+    })
+    if (!isOnMapsSearch && this.input) this.input.value = ''
   }
 
   render = () => (
