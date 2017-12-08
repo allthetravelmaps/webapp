@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 
 const MapTile = (props: { slug: string }) => (
   <div
@@ -13,7 +14,7 @@ const MapTile = (props: { slug: string }) => (
   >
     Map Tile<br />
     <br />
-    {props.slug}
+    <Link to={`/maps/${props.slug}`}>{props.slug}</Link>
   </div>
 )
 

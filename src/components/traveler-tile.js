@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 
 const TravelerTile = (props: { slug: string }) => (
   <div
@@ -12,7 +13,7 @@ const TravelerTile = (props: { slug: string }) => (
   >
     Traveler Tile<br />
     <br />
-    {props.slug}
+    <Link to={`/travelers/${props.slug}`}>{props.slug}</Link>
   </div>
 )
 
