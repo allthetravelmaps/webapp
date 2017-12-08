@@ -7,13 +7,13 @@ import './index.css'
 const MenuItems = () => (
   <Nav vertical>
     <NavItem>
-      <NavLink href='/maps'>Choose a map</NavLink>
+      <NavLink href='/maps'>Choose a Map</NavLink>
     </NavItem>
     <NavItem>
-      <NavLink href='/travelers'>Traveler directory</NavLink>
+      <NavLink href='/travelers'>Traveler Directory</NavLink>
     </NavItem>
     <NavItem>
-      <NavLink href='/profile'>Your profile</NavLink>
+      <NavLink href='/profile'>Your Profile</NavLink>
     </NavItem>
     <NavItem>
       <NavLink href='/blog'>Blog - what's new?</NavLink>
