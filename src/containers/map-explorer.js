@@ -23,9 +23,7 @@ class MapExplorer extends React.Component<{ match: * }, {}> {
     return (
       <div
         style={{ position: 'absolute', height: '100%', width: '100%' }}
-        ref={x => {
-          this.container = x
-        }}
+        ref={x => (this.container = x)}
       />
     )
   }
