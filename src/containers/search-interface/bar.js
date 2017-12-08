@@ -8,7 +8,6 @@ import {
   InputGroupButton,
   Label
 } from 'reactstrap'
-import './index.css'
 
 const SearchBar = (props: { itemType: string, sortOpts: string[] }) => (
   <Form inline id='search-bar'>

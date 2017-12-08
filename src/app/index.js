@@ -7,7 +7,7 @@ import MapExplorer from '../containers/map-explorer.js'
 import {
   MapSearchInterface,
   TravelerSearchInterface
-} from '../containers/search-interface.js'
+} from '../containers/search-interface'
 import TravelerProfile from '../containers/traveler-profile.js'
 import './index.css'
 

@@ -1,9 +1,10 @@
 // @flow
 import * as React from 'react'
-import SearchBar from './search-bar'
-import SearchResults from '../components/search-results.js'
-import MapTile from '../components/map-tile.js'
-import TravelerTile from '../components/traveler-tile.js'
+import SearchBar from './bar.js'
+import SearchResults from './results.js'
+import MapTile from '../../components/map-tile.js'
+import TravelerTile from '../../components/traveler-tile.js'
+import './index.css'
 
 type SearchInterfaceProps = {
   itemType: string,
